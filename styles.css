@@ -426,6 +426,9 @@ img {
 }
 
 /* marketing-product-section */
+.marketing-section {
+  margin-bottom: 38px;
+}
 .marketing-product-section {
   position: relative;
   background: #f8f8fa;
@@ -684,8 +687,8 @@ img {
 
 .modal-close-btn {
   position: relative;
-  left: 50%;
-  top: 5%;
+  left: 45%;
+  top: 10%;
   background-color: #f3f4f6;
   border-radius: 100%;
 }
