@@ -822,9 +822,9 @@ img {
     border-radius: 8px;
   }
   #name {
-    border: 0.75px solid #d5d5d6;
+    /* border: 0.75px solid #d5d5d6;
     padding: 3px;
-  }
+  } */
   #phone {
     margin-bottom: 5px;
   }
