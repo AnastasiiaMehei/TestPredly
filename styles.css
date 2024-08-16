@@ -403,13 +403,6 @@ img {
     flex-direction: row;
     gap: 10px;
   }
-  /* .btn-swipe button {
-    width: 28px;
-    height: 28px;
-    background: #5d78ff;
-    border-radius: 100%;
-    cursor: pointer;
-  } */
   .btn-swipe button {
     display: flex;
     justify-content: center;
@@ -554,7 +547,7 @@ img {
 }
 
 .select-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 10px;
@@ -887,23 +880,6 @@ input:hover {
   outline: none;
   /* border: none; */
 }
-/* .input-with-icon:focus-within,
-.input-with-icon:hover {
-  outline: none;
-  border: none;
-} */
-/* Swiper styles */
-/* .swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-} */
 .swiper-container {
   width: 100%;
   height: 350px;
@@ -920,5 +896,5 @@ input:hover {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #000;
+  color: blue;
 }
