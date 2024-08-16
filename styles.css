@@ -790,12 +790,25 @@ img {
   .modal-photo {
     display: block;
     position: absolute;
-    transform: translate(12%, -44%);
+    top: 50%; /* Adjust these values as needed */
+    left: 50%; /* Adjust these values as needed */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Centers the photo relative to the modal-body */
+    width: 200px; /* Example width, adjust as needed */
+    height: auto; /* Adjust as needed */
   }
-  .modal-body {
+  /* .modal-body {
     transform: translate(17%, -50%);
     width: 380px;
     height: 560px;
+  } */
+  .modal-body {
+    transform: translate(17%, -50%);
+    width: 380px; /* Adjusted width to ensure there's space for the photo */
+    height: 560px;
+    position: relative; /* Ensure modal-body is positioned relative to allow absolute positioning of child elements */
   }
   .modal-title {
     font-size: 34px;
