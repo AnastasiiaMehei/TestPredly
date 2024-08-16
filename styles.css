@@ -802,6 +802,7 @@ img {
   flex-direction: row;
   justify-content: center;
   gap: 9px;
+  margin-top: 8px;
 }
 
 #name {
@@ -876,6 +877,7 @@ img {
 
   .logo-sign {
     font-size: 12px;
+    margin-top: 0px;
   }
 }
 
