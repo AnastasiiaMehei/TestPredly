@@ -676,9 +676,9 @@ img {
 }
 
 .modal-close-btn {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+  position: relative;
+  left: 50%;
+  top: 5%;
   background-color: #f3f4f6;
   border-radius: 100%;
 }
