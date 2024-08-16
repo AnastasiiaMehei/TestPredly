@@ -641,9 +641,11 @@ img {
   }
 }
 /* modal */
+
 .hidden {
   display: none;
 }
+
 .modal-backdrop {
   background-color: transparent;
   position: fixed;
@@ -654,23 +656,28 @@ img {
   z-index: 1000;
   width: 100vw;
   height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
 }
+.flex {
+  display: flex;
+}
+.modal-photo {
+  display: none;
+  width: 200px;
+  height: auto;
+}
+
 .modal-body {
-  z-index: 3000;
   background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 26px 24px 20px 24px;
   width: 285px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 18px;
-  width: 299px;
-  height: 450px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -682,20 +689,22 @@ img {
   background-color: #f3f4f6;
   border-radius: 100%;
 }
+
 .modal-icon {
   stroke: black;
   fill: red;
 }
+
 .modal-title {
   font-size: 18px;
   font-weight: 400;
-
   line-height: 120%;
   letter-spacing: 0.02em;
   text-align: center;
   width: 226px;
   margin-top: 26px;
 }
+
 .modal-paragraph {
   font-weight: 400;
   font-size: 12px;
@@ -705,6 +714,7 @@ img {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .contact-form {
   width: 237px;
   display: flex;
@@ -712,10 +722,12 @@ img {
   gap: 6px;
   border: none;
 }
+
 .name-input {
   display: flex;
   flex-direction: column;
 }
+
 .contact-form label {
   font-weight: 600;
   font-size: 9px;
@@ -725,6 +737,7 @@ img {
   display: block;
   margin-bottom: 5px;
 }
+
 .contact-form input {
   border: 0.75px solid #d5d5d6;
   border-radius: 6px;
@@ -734,10 +747,10 @@ img {
   margin-bottom: 10px;
   width: 237px;
 }
+
 .support-btn,
 .contact-sales-btn {
   border-radius: 5px;
-
   padding: 7px 0px;
   width: 114px;
   height: 32px;
@@ -747,21 +760,24 @@ img {
   color: #fff;
   cursor: pointer;
 }
+
 .btn-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
   gap: 7px;
   margin-top: 18px;
   margin-bottom: 18px;
 }
+
 .support-btn {
   background: #aed1ff;
 }
+
 .contact-sales-btn {
   background: #5d78ff;
 }
+
 .agree {
   display: flex;
   flex-direction: row;
@@ -770,40 +786,35 @@ img {
   color: #909090;
   margin-bottom: 10px;
 }
+
 .span-label {
   color: #5d78ff;
 }
+
 .logo-sign {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 9px;
 }
-.modal-photo {
-  display: none;
-}
+
 #name {
-  /* border: 0.75px solid #d5d5d6; */
   padding: 3px;
 }
+
 @media screen and (min-width: 1440px) {
   .modal-photo {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-95%, -18%);
-    width: 200px;
-    height: auto;
     width: 380px;
-    height: 1112px;
+    /* height: 1112px; */
   }
+
   .modal-body {
-    transform: translate(5%, 59%);
+    display: flex;
     width: 380px;
     height: 523px;
-    position: relative;
   }
+
   .modal-title {
     font-size: 34px;
     line-height: 120%;
@@ -811,18 +822,21 @@ img {
     width: 313px;
     margin-bottom: 24px;
   }
+
   .modal-paragraph {
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 0em;
     width: 280px;
   }
+
   .contact-form label {
     font-weight: 600;
     font-size: 12px;
     line-height: 130%;
     letter-spacing: 0em;
   }
+
   .contact-form input {
     font-size: 14px;
     line-height: 150%;
@@ -833,74 +847,63 @@ img {
     border: 1px solid #d5d5d6;
     border-radius: 8px;
   }
-  #name {
-    /* border: 0.75px solid #d5d5d6;
-    padding: 3px;
-  } */
-    #phone {
-      margin-bottom: 5px;
-    }
-    .btn-form {
-      margin-bottom: 24px;
-    }
-    .support-btn,
-    .contact-sales-btn {
-      padding: 12px 41px;
-      width: 155px;
-      height: 42px;
-    }
-    .agree,
-    .span-label {
-      font-size: 13px;
-    }
-    .logo-sign {
-      font-size: 12px;
-    }
-    .modal-body {
-      z-index: 3000;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-6%, -51%);
-    }
+
+  .btn-form {
+    margin-bottom: 24px;
   }
 
-  /* error message for inputs */
-  .error-message {
-    display: none;
-    color: red;
+  .support-btn,
+  .contact-sales-btn {
+    padding: 12px 41px;
+    width: 155px;
+    height: 42px;
+  }
+
+  .agree,
+  .span-label {
+    font-size: 13px;
+  }
+
+  .logo-sign {
     font-size: 12px;
-    margin-top: 5px;
   }
+}
 
-  .input-error {
-    border-color: red;
-  }
+/* error message for inputs */
+.error-message {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
 
-  .input-with-icon-error {
-    border: 1px solid red;
-  }
-  input:focus,
-  input:hover {
-    outline: none;
-    /* border: none; */
-  }
-  .swiper-container {
-    width: 100%;
-    height: 350px;
-  }
+.input-error {
+  border-color: red;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.input-with-icon-error {
+  border: 1px solid red;
+}
+input:focus,
+input:hover {
+  outline: none;
+  /* border: none; */
+}
+.swiper-container {
+  width: 100%;
+  height: 350px;
+}
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: blue;
-  }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: blue;
 }
