@@ -789,7 +789,8 @@ img {
 @media screen and (min-width: 1440px) {
   .modal-photo {
     display: block;
-    transform: translate(27%, 59%);
+    position: absolute;
+    transform: translate(12%, -44%);
   }
   .modal-body {
     transform: translate(17%, -50%);
@@ -854,13 +855,6 @@ img {
       top: 50%;
       left: 50%;
       transform: translate(-6%, -51%);
-    }
-    .modal-photo {
-      z-index: 3000;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      /* transform: translate(27%, 31%); */
     }
   }
 
