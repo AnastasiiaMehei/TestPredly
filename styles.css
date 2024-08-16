@@ -457,7 +457,7 @@ img {
 }
 #product1 {
   transform: translate(2%, 1%);
-  height: 328px;
+  height: 372px;
   display: flex;
   flex-direction: column;
   width: 304px;
@@ -500,9 +500,6 @@ img {
   }
 }
 /* footer */
-.footer-wrapper {
-  margin-top: 29px;
-}
 .footer-buttons {
   display: flex;
   justify-content: center;
