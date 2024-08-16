@@ -790,25 +790,19 @@ img {
   .modal-photo {
     display: block;
     position: absolute;
-    top: 50%; /* Adjust these values as needed */
-    left: 50%; /* Adjust these values as needed */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Centers the photo relative to the modal-body */
-    width: 200px; /* Example width, adjust as needed */
-    height: auto; /* Adjust as needed */
-  }
-  /* .modal-body {
-    transform: translate(17%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, -18%);
+    width: 200px;
+    height: auto;
     width: 380px;
-    height: 560px;
-  } */
+    height: 1112px;
+  }
   .modal-body {
-    transform: translate(17%, -50%);
-    width: 380px; /* Adjusted width to ensure there's space for the photo */
-    height: 560px;
-    position: relative; /* Ensure modal-body is positioned relative to allow absolute positioning of child elements */
+    transform: translate(3%, 79%);
+    width: 380px;
+    height: 523px;
+    position: relative;
   }
   .modal-title {
     font-size: 34px;
