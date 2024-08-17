@@ -119,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       nameError.style.display = "none";
       nameInput.classList.remove("input-error");
+      nameInput.classList.add("input-border");
     }
 
     if (phoneInput.value.trim() === "") {
@@ -130,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
       phoneError.style.display = "none";
       phoneInput.classList.remove("input-error");
       inputWithIcon.classList.remove("input-with-icon-error");
+      nameInput.classList.add("input-border");
     }
 
     if (!isValid) {

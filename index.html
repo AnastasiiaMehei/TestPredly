@@ -10,6 +10,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -82,28 +85,29 @@
         </div>
       </div>
     </section>
-    <section class="six-resons-section">
-      <div class="container wrapper-six-resons">
+    <section class="">
+      <div class="container six-resons-section wrapper-six-resons">
         <p class="paragraph-six-reasons"><span class="six-reasons">6 Reasons </span>to Use Plerdy Data for a Website
           Usability Audit</p>
-      </div>
-      <div class="btn-swipe">
+          <div class="btn-swipe">
         
-          <div class="">
-            <button id="btn-swipe1">
-              <svg width="10" height="10">
-                <use href="./images/symbol-defs.svg#icon-left"></use>
-              </svg>
-            </button>
-          </div>
-          <div class="">
-            <button id="btn-swipe2">
-              <svg width="10" height="10">
-                <use href="./images/symbol-defs.svg#icon-right"></use>
-              </svg>
-            </button>
-          </div>   
+            <div class="">
+              <button id="btn-swipe1">
+                <svg width="10" height="10">
+                  <use href="./images/symbol-defs.svg#icon-left"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="">
+              <button id="btn-swipe2">
+                <svg width="10" height="10">
+                  <use href="./images/symbol-defs.svg#icon-right"></use>
+                </svg>
+              </button>
+            </div>   
+        </div>
       </div>
+      
     </section>
     <section class="marketing-section">
       <div class="swiper-container">
@@ -207,7 +211,7 @@
           <form action="contact-form">
             <div class="name-input">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Boris Johnson" required>
+              <input class="input-border" type="text" id="name" name="name" placeholder="Boris Johnson" required>
               <span class="error-message" id="name-error">This field is required</span>
             </div>
             <label for="phone">Label</label>
