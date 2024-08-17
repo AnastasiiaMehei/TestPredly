@@ -156,6 +156,8 @@ img {
     text-align: center;
     color: #fff;
     border-radius: 8px;
+    width: 158px;
+    padding: 6px 24px;
     display: flex;
         align-items: center;
         justify-content: center;
