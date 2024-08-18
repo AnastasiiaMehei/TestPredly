@@ -106,6 +106,44 @@ img {
 .sign-contact {
   display: none;
 }
+/*  */
+.nav-list-items li {
+  position: relative;
+}
+.innerNav {
+  position: absolute;
+  list-style: none;
+  top: 78%;
+  left: -234px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: max-content;
+  display: flex;
+  gap: 15px;
+}
+.innerNav a {
+  line-height: 1.5;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 110%;
+  color: #7d7d7d;
+}
+.innerNav a:hover,
+.innerNav a:focus,
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: #5d78ff;
+}
+.innerNav li {
+  background-color: transparent;
+}
+.nav-list-items li:hover .innerNav,
+.nav-list-items li:focus-within .innerNav {
+  visibility: visible;
+  opacity: 1;
+}
 @media screen and (min-width: 768px) {
   .nav-list-items {
     justify-content: space-between;
@@ -129,6 +167,10 @@ img {
   .burger-list-item {
     display: none;
   }
+  /*  */
+  /* .innerNav {
+    display: none;
+  } */
   .sign-contact {
     display: block;
   }
@@ -138,6 +180,7 @@ img {
     gap: 25px;
     align-items: center;
   }
+
   .sign-in {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
@@ -146,6 +189,10 @@ img {
     line-height: 160%;
     text-align: center;
     color: #5d78ff;
+  }
+  .sign-in:hover,
+  .sign-in:focus {
+    color: #7d7d7d;
   }
   .contact-sales {
     font-family: "Source Sans Pro", sans-serif;
@@ -159,11 +206,9 @@ img {
     width: 158px;
     padding: 6px 24px;
     display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    align-items: center;
+    justify-content: center;
   }
-
 }
 @media screen and (min-width: 1440px) {
   */ .nav-list-items {
@@ -387,9 +432,7 @@ img {
 .six-reasons {
   color: #001e41;
 }
-.btn-swipe {
-  display: none;
-}
+
 @media screen and (min-width: 768px) {
   .wrapper-six-resons {
     width: 400px;
@@ -414,10 +457,7 @@ img {
   font-size: 36px;
 }
 .btn-swipe {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
+  display: none;
 }
 .btn-swipe button {
   display: flex;
@@ -488,6 +528,12 @@ img {
     display: flex;
     flex-direction: row;
     gap: 20px;
+  }
+  .btn-swipe {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
   }
   #product1,
   #product2,
@@ -858,7 +904,7 @@ img {
   }
   .modal-close-btn {
     left: 52%;
-        top: 6%;
+    top: 6%;
   }
   .modal-title {
     font-size: 34px;
